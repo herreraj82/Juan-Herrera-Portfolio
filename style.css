@@ -55,7 +55,8 @@ article {
     border-left:  var(--divider);
     border-right: var(--divider);
     padding-left:  2rem;
-    padding-right: 5rem;
+    padding-right: 2rem;
+    flex-basis: 35rem;;
     background-color: var(--main-bg-color);
     box-shadow: 0rem 1rem 1rem  black;
 }
