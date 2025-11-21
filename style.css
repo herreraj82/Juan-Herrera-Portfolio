@@ -15,6 +15,7 @@ a {
 
 html {
     height: 100%;
+    overflow: hidden;
     font-family: Helvetica, sans-serif;
     color: var(--main-fg-color);
 }
@@ -25,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    overflow: scroll;
     background-color: #0e183d;
 }
 
@@ -40,6 +42,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 main {
@@ -67,6 +71,12 @@ article {
     box-shadow: 0rem 1rem 1rem  black;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 nav a {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -79,6 +89,7 @@ header a:hover {
     color: #7c84a3;
 }
 
-
-
+img {
+    max-width: 100%;
+}
 
