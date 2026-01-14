@@ -3,3 +3,10 @@ CREATE TABLE [inventory].[retail_products] (
   [brand_id] int,
   [category_id] int
 )
+GO
+
+ALTER TABLE [inventory].[retail_products] ADD FOREIGN KEY ([brand_id]) REFERENCES [inventory].[brands] ([brand_id])
+GO
+
+ALTER TABLE [inventory].[retail_products] ADD FOREIGN KEY ([category_id]) REFERENCES [inventory].[categories] ([category_id])
+GO
